@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary-color: #008dd1;
+  --primary-color2: #1a99d6;
+  --primary-color3: #a4d6ef;
+  --primary-hover: #139793;
+  --secondary-color: #ff1e00;
+  --secondary-hover: #df3923;
+  --logo: url(../img/nav-logo.png);
+  --font-size: 0.87rem;
+}
+
+.login-pf body {
+  font-family: Roboto, sans-serif;
+  background: transparent none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-pf-page {
+
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-grow: 1;
+}
+
+/* Login Card */
+#kc-header {
+  text-transform: none !important;  /*I changed the 3 next line */
+  font-size: 2.9rem; 
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold; /* Make it bolder if needed */
+  color: var(--primary-color);
+}
+/*
+#kc-header-wrapper {
+  text-transform: none !important;
+
+}
+*/
+
+/* through here I injected the logo inside the keycloak because through the ftl I broke down the layouts by replacing the display name with a logo in the template.ftl
+/* Hide the text but keep layout intact */
+#kc-header-wrapper {
+  font-size: 0;
+  line-height: 0;
+  position: relative;
+  height: auto;
+  text-align: center;
+  margin-bottom: -3rem;
+}
+
+/* Inject the logo */
+#kc-header-wrapper::before {
+  content: "";
+  display: inline-block;
+  background: url("../img/nav-logo.png") no-repeat center;
+  background-size: contain;
+  width: 280px;
+  height: 90px;
+}
+
+
+
+
+.card-pf {
+  background: #cecece17;
+  border-color: var(--secondary-color);
+}
+
+.pf-c-button.pf-m-primary {
+  background-color: var(--secondary-color);
+  font-size: var(--font-size);
+  font-weight: 500;
+  color: #000;
+  border-radius: 20px;
+  box-shadow: 0 0 6px #00000029;
+}
+
+.pf-c-button.pf-m-primary:hover {
+    background-color: var(--secondary-hover);
+}
+
+.pf-c-button.pf-m-primary.socials-btn {
+    background-color: var(--primary-color);
+    font-size: var(--font-size);
+    font-weight: 500;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 6px #00000029;
+    &:hover {
+        background-color: var(--primary-hover);
+        color: #fff;
+    }
+    &:focus {
+        text-decoration: none;
+        outline-color: none;
+    }
+}
+
+
+/* Menu */
+.login-pf-page-menu {
+  height: 80px;
+  display: flex;
+  display: flex;
+  box-shadow: var(--pf-global--BoxShadow--lg);
+}
+
+@media screen and (max-width: 767px) {
+  .login-pf-page-menu {
+    box-shadow: none;
+  }
+}
+
+.login-pf-page-menu-logo-container {
+  height: 100%;
+  flex: 1;
+  max-width: 250px;
+  /* width: auto; */
+  padding: 0.5rem 1rem;
+  /* display: flex
+; */
+}
+
+.login-pf-page-menu-logo {
+  background: no-repeat center / contain var(--logo);
+
+  height: 100%;
+
+
+ 
+}
+
+
+.login-header-logo {
+    display: block;
+    margin: 1rem auto;
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+}
+
+
+.admin-login {
+    text-align: center;
+    color: var(--pf-global--Color--200);
+}
+
+
+
+
+.accordion {
+    .accordion-label{
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        padding: 0 1rem;
+        align-items: center;
+        i {
+            font-size: 1rem;
+        }
+        .fa-exclamation-circle {
+            color: #fe5142;
+        }
+        .fa-angle-up {
+            display: none;
+        }
+        .fa-angle-down {
+            display: inline-block;
+        }
+    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+    .content {
+        padding: 0 1rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s
+    }
+}
+
+.accordion input[type="checkbox"]:checked + .accordion-label + .content {
+    max-height: 20rem;
+}
+
+.accordion input[type="checkbox"]:checked + .accordion-label {
+    .fa-angle-up {
+        display: inline-block;
+    }
+}
+
+.accordion input[type="checkbox"]:checked + .accordion-label{
+    .fa-angle-down {
+        display: none;
+    }
+}
+
+#kc-login {
+    margin-bottom: 0.25rem;
+}
+
+.hint-text {
+    margin-top: 0.25rem;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+/*
+.social-media-icons {
+
+    position: absolute;
+    right: 0;
+    gap: 10px;
+    padding: 1rem;
+    display: flex;
+
+    align-self: end;
+
+
+}
+
+*/
+.social-media-icons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    margin-top: 1rem;  
+    right: 1rem;
+    top: 1rem;
+}
+
+.social-media-icons a {
+    background-color:#54595f;
+    color: white;
+    padding: 10px;
+    border-radius: 0;  /* μυτερές γωνίες */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.social-media-icons a i.fa-linkedin-in {
+    background-color: white;
+    color: #54595f;
+    padding: 1.3px;
+    border-radius: 1px;
+    font-size: 8px;
+}
+
+
+
+.social-media-icons a:hover {
+    background-color: #54595f; 
+    color: white;              
+}
+
+
+.social-media-icons i {
+    font-size: 10px;
+}
+
+
+
