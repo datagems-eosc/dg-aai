@@ -8,4 +8,4 @@ RUN chown -R keycloak:0 /opt/keycloak/themes/datagems-theme
 
 USER keycloak
 
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start"]
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
