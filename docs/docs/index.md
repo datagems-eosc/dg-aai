@@ -2,7 +2,7 @@
 
 This is the documentation site for the DataGEMS AAI. The service is part of the wider [DataGEMS](https://datagems.eu/) platform. This is part of the overall [platform documentation](https://datagems-eosc.github.io/).
 
-The platform Gateway AAI service acts as the horizontal Authenticatino and Authorization Infrastructure solution for DataGEMS [user interface](https://datagems-eosc.github.io/dg-app-ui) and all other core or intgegrating components that want to utilize the DataGEMS offerings. 
+The platform Gateway AAI service acts as the horizontal Authentication and Authorization Infrastructure solution for DataGEMS [user interface](https://datagems-eosc.github.io/dg-app-ui) and all other core or integrating components that want to utilize the DataGEMS offerings. 
 
 You can use the menu options on the left to navigate through the available documentation. You may be interested to jump directly to an [Architecture Overview](architecture.md), see the available [Onboarding Material](onboarding.md) or see some [Api Examples](api-overview.md). You can find here the service [code repository](https://github.com/datagems-eosc/dg-aai).
 

@@ -2,9 +2,6 @@
 
 All DataGEMS services are producing logs in a structured way, usilizing common log formats. The logs are aggregated to the [Logging Service](https://datagems-eosc.github.io/dg-logging-service) where they can be queried and analyzed.
 
-## Log format
-
-
 ## Troubleshooting Logs
 
 Troubleshooting logs are produced by the service throughout the execution of caller requests. The logs produced by Keycloak do not follow the structured format and are indexed with their full payload without extracting additional properties.

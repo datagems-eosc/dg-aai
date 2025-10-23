@@ -8,9 +8,9 @@ The definite guide for integrators remains the Keycloak [documentation](https://
 
 Keycloak is an open source project and the codebase is available uuder [Apache License Version 2.0](https://github.com/keycloak/keycloak/blob/main/LICENSE.txt) in the project's [GitHub code repository](https://github.com/keycloak/keycloak).
 
-Customizations and theming applied under DataGEMS are available under [Apache License Version 2.0](licence.md) in our [GitHub code repository](https://github.com/datagems-eosc/dg-aai).
+Customizations and theming applied under DataGEMS are available under [Apache License Version 2.0](license.md) in our [GitHub code repository](https://github.com/datagems-eosc/dg-aai).
 
-On aspect pertaining to security, you can read more at the [Secruity](security.md) section.
+On aspect pertaining to security, you can read more at the [Security Model](security.md) section.
 
 For an overall view of the service, you can go through the [Architecture](architecture.md).
 
