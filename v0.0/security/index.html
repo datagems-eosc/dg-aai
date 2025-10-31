@@ -22,7 +22,7 @@
     
     
       
-        <title>Security - DataGEMS AAI Docs</title>
+        <title>Security Model - DataGEMS AAI Docs</title>
       
     
     
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Security
+              Security Model
             
           </span>
         </div>
@@ -343,7 +343,7 @@
   
   
   <span class="md-ellipsis">
-    Security
+    Security Model
     
   </span>
   
@@ -356,7 +356,7 @@
   
   
   <span class="md-ellipsis">
-    Security
+    Security Model
     
   </span>
   
@@ -512,7 +512,7 @@
   
   
   <span class="md-ellipsis">
-    Overview
+    Examples
     
   </span>
   
@@ -942,44 +942,46 @@
 <p>The model used within the DataGEMS AAI, utilizing the constructs offered by the underpinning Keycloak solution facilitates the authentication and authorization needs of the DataGEMS platform.</p>
 <p>Basic constructs include:</p>
 <ul>
-<li>Clients: Each of the DataGEMS components is defined as a Keycloak client. If the respective client requires to be able to contact other services on behalf of requesting parties, tit is enabled the token exchange flow.</li>
-<li>Client Scopes: For each client, a client scope is created. Individual clients are configured to support available client scopes to be able to control which scopes are available per client. Scope mappers allow the exchange of requested client scopes with access token that contain the respective client as a audience. This way, access tokens generated for specific scopes can be accepted by the respective audience clients.</li>
-<li>Realm Roles: At the realm level, we define roles that can be assigned directly to users or through user groups.</li>
-<li>Client Roles: At the client level, we define roles that can be assigned directly to users or through user groups.</li>
-<li>User Groups: To facilitate the management of the user base, user groups are created to allow easier assignment of roles to users.</li>
-<li>Context Grants: To keep available context grants in a central point, special User Groups are created that allow assignment of roles and access levels within specific context.</li>
+<li><strong>Clients</strong>: Each of the DataGEMS components is defined as a Keycloak client. If the respective client requires to be able to contact other services on behalf of requesting parties, tit is enabled the token exchange flow.</li>
+<li><strong>Client Scopes</strong>: For each client, a client scope is created. Individual clients are configured to support available client scopes to be able to control which scopes are available per client. Scope mappers allow the exchange of requested client scopes with access token that contain the respective client as a audience. This way, access tokens generated for specific scopes can be accepted by the respective audience clients.</li>
+<li><strong>Realm Roles</strong>: At the realm level, we define roles that can be assigned directly to users or through user groups.</li>
+<li><strong>Client Roles</strong>: At the client level, we define roles that can be assigned directly to users or through user groups.</li>
+<li><strong>User Groups</strong>: To facilitate the management of the user base, user groups are created to allow easier assignment of roles to users.</li>
+<li><strong>Context Grants</strong>: To keep available context grants in a central point, special User Groups are created that allow assignment of roles and access levels within specific context.</li>
 </ul>
 <h2 id="realm-roles">Realm Roles<a class="headerlink" href="#realm-roles" title="Permanent link">&para;</a></h2>
 <p>The currently available realm roles include:</p>
 <ul>
-<li>dg_admin: Reserved and assigned to adminstrators. If a user has this role associated, they should be able to perform any action.</li>
-<li>dg_user: Granted to all users of the platform. This is the base requirement for any authenticated user to utilize the application components. Without this role, the user should not be able to utilize DataGEMS.</li>
+<li><strong>dg_admin</strong>: Reserved and assigned to adminstrators. If a user has this role associated, they should be able to perform any action.</li>
+<li><strong>dg_user</strong>: Granted to all users of the platform. This is the base requirement for any authenticated user to utilize the application components. Without this role, the user should not be able to utilize DataGEMS.</li>
+<li><strong>dg_dataset-uploader</strong>: Reserved and assigned to users that should be able to onboard new datasets to the platform.</li>
+<li><strong>dg_dataset-curator</strong>: Reserved and assigned to users that should be able to process datasets available in the platform.</li>
 </ul>
 <p>More realm level roles may be created to capture more fine grained user categories.</p>
 <h2 id="client-roles">Client Roles<a class="headerlink" href="#client-roles" title="Permanent link">&para;</a></h2>
 <p>The currently available client roles include:</p>
 <ul>
-<li>accounting.admin: Reserved and assigned to <a href="https://datagems-eosc.github.io/dg-accounting/">Accounting Service</a> administrators.</li>
-<li>accounting.user: Assigned to users that should be able to access the <a href="https://datagems-eosc.github.io/dg-accounting/">Accounting Service</a> functionality.</li>
+<li><strong>accounting.admin</strong>: Reserved and assigned to <a href="https://datagems-eosc.github.io/dg-accounting/">Accounting Service</a> administrators.</li>
+<li><strong>accounting.user</strong>: Assigned to users that should be able to access the <a href="https://datagems-eosc.github.io/dg-accounting/">Accounting Service</a> functionality.</li>
 </ul>
 <p>More client level roles may be created to capture more fine grained user categories and component requirements.</p>
 <h2 id="context-roles">Context Roles<a class="headerlink" href="#context-roles" title="Permanent link">&para;</a></h2>
 <p>To manage assigning access grants with specific context, roles are defined that grant the respective access to the context that they are assigned to. Currently, two context entites are identified:</p>
 <ul>
-<li>Datasets: Access grants assigned to a user or user group with a Dataset context, assign the specific access level to the dataset. The currently available dataset context roles include:<ul>
-<li>dg_ds-browse: Users with this access level can browse the dataset metadata</li>
-<li>dg_ds-delete: Users with this access level can delete the dataset from the platform</li>
-<li>dg_ds-download: Users with this access level can download the dataset</li>
-<li>dg_ds-edit: Users with this access level can edit the dataset metadata</li>
-<li>dg_ds-manage: Users with this access level can manage the dataset and share it with others</li>
-<li>dg_ds-search: Users with this access level can perform content based searched in the dataset</li>
+<li><strong>Datasets</strong>: Access grants assigned to a user or user group with a Dataset context, assign the specific access level to the dataset. The currently available dataset context roles include:<ul>
+<li><strong>dg_ds-browse</strong>: Users with this access level can browse the dataset metadata</li>
+<li><strong>dg_ds-delete</strong>: Users with this access level can delete the dataset from the platform</li>
+<li><strong>dg_ds-download</strong>: Users with this access level can download the dataset</li>
+<li><strong>dg_ds-edit</strong>: Users with this access level can edit the dataset metadata</li>
+<li><strong>dg_ds-manage</strong>: Users with this access level can manage the dataset and share it with others</li>
+<li><strong>dg_ds-search</strong>: Users with this access level can perform content based searched in the dataset</li>
 </ul>
 </li>
-<li>Collections: Access grants assigned to a user or user group with a Collection context, assign the specific access level to the collection. The currently available collection context roles include:<ul>
-<li>dg_col-browse: Users with this access level can browse the collection</li>
-<li>dg_col-delete: Users with this access level can delete the collection from the platform</li>
-<li>dg_col-edit: Users with this access level can edit the collection metadata</li>
-<li>dg_col-manage: Users with this access level can manage the collection and share it with others</li>
+<li><strong>Collections</strong>: Access grants assigned to a user or user group with a Collection context, assign the specific access level to the collection. The currently available collection context roles include:<ul>
+<li><strong>dg_col-browse</strong>: Users with this access level can browse the collection</li>
+<li><strong>dg_col-delete</strong>: Users with this access level can delete the collection from the platform</li>
+<li><strong>dg_col-edit</strong>: Users with this access level can edit the collection metadata</li>
+<li><strong>dg_col-manage</strong>: Users with this access level can manage the collection and share it with others</li>
 </ul>
 </li>
 </ul>
@@ -988,8 +990,8 @@
 <h2 id="user-groups">User Groups<a class="headerlink" href="#user-groups" title="Permanent link">&para;</a></h2>
 <p>The currently configured user groups include:</p>
 <ul>
-<li>Admins: members of this group are assigned the realm level dg_admin role</li>
-<li>Users: members of this group are assigned the realm level dg_user role</li>
+<li><strong>Admins</strong>: members of this group are assigned the realm level dg_admin role</li>
+<li><strong>Users</strong>: members of this group are assigned the realm level dg_user role</li>
 </ul>
 <h2 id="context-grant-groups">Context Grant Groups<a class="headerlink" href="#context-grant-groups" title="Permanent link">&para;</a></h2>
 <p>To manage the context based access grants, user groups are created that allow the assignment of specific access levels to individual users or user groups. The groups are created with a specific hierarchy and metadata that allows the resolution of the context grants and memberhips. The following pattern indicates the hierarchy:</p>
