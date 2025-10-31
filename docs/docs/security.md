@@ -17,6 +17,8 @@ The currently available realm roles include:
 
 * **dg_admin**: Reserved and assigned to adminstrators. If a user has this role associated, they should be able to perform any action.
 * **dg_user**: Granted to all users of the platform. This is the base requirement for any authenticated user to utilize the application components. Without this role, the user should not be able to utilize DataGEMS.
+* **dg_dataset-uploader**: Reserved and assigned to users that should be able to onboard new datasets to the platform.
+* **dg_dataset-curator**: Reserved and assigned to users that should be able to process datasets available in the platform.
 
 More realm level roles may be created to capture more fine grained user categories.
 
