@@ -8,25 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://datagems-eosc.github.io/dg-aai/v0.0/api-overview/">
+        <link rel="canonical" href="https://datagems-eosc.github.io/dg-aai/v0.0/token-client-secret/">
       
       
-        <link rel="prev" href="../datastore/">
+        <link rel="prev" href="../token-user-password/">
       
       
-        <link rel="next" href="../automations/">
+        <link rel="next" href="../token-refresh-token/">
+      
+      
+        
       
       
       <link rel="icon" href="../images/favicon.jpg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Examples - DataGEMS AAI Docs</title>
+        <title>Client Secret - DataGEMS AAI Docs</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -53,7 +56,6 @@
     
       
 
-    
     
     
   
@@ -125,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Examples
+              Client Secret
             
           </span>
         </div>
@@ -249,9 +251,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
     
   </span>
+  
   
 
       </a>
@@ -282,9 +289,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     System
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -293,7 +305,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            System
+            
+  
+    System
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -309,9 +325,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Architecture
+  
+
     
   </span>
+  
   
 
       </a>
@@ -332,9 +353,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Security Model
+  
+
     
   </span>
+  
   
 
       </a>
@@ -355,9 +381,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Datastores
+  
+
     
   </span>
+  
   
 
       </a>
@@ -398,9 +429,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     API
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -409,9 +445,41 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            API
+            
+  
+    API
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../token-user-password/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Password
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -434,9 +502,14 @@
   
   
   <span class="md-ellipsis">
-    Examples
+    
+  
+    Client Secret
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -447,9 +520,14 @@
   
   
   <span class="md-ellipsis">
-    Examples
+    
+  
+    Client Secret
+  
+
     
   </span>
+  
   
 
       </a>
@@ -472,7 +550,9 @@
         <li class="md-nav__item">
   <a href="#client-secret" class="md-nav__link">
     <span class="md-ellipsis">
-      Client Secret
+      
+        Client Secret
+      
     </span>
   </a>
   
@@ -481,7 +561,9 @@
         <li class="md-nav__item">
   <a href="#user-password" class="md-nav__link">
     <span class="md-ellipsis">
-      User Password
+      
+        User Password
+      
     </span>
   </a>
   
@@ -490,7 +572,9 @@
         <li class="md-nav__item">
   <a href="#refresh-token" class="md-nav__link">
     <span class="md-ellipsis">
-      Refresh Token
+      
+        Refresh Token
+      
     </span>
   </a>
   
@@ -499,7 +583,9 @@
         <li class="md-nav__item">
   <a href="#exchange-token" class="md-nav__link">
     <span class="md-ellipsis">
-      Exchange Token
+      
+        Exchange Token
+      
     </span>
   </a>
   
@@ -509,6 +595,62 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../token-refresh-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Refresh Token
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../token-exchange-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Token Exchange
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -544,9 +686,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Setup & Monitoring
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -555,7 +702,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Setup & Monitoring
+            
+  
+    Setup & Monitoring
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -571,9 +722,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Automations
+  
+
     
   </span>
+  
   
 
       </a>
@@ -594,9 +750,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Deployment
+  
+
     
   </span>
+  
   
 
       </a>
@@ -617,9 +778,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Configuration
+  
+
     
   </span>
+  
   
 
       </a>
@@ -640,9 +806,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Logging & Accounting
+  
+
     
   </span>
+  
   
 
       </a>
@@ -663,9 +834,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Maintenance
+  
+
     
   </span>
+  
   
 
       </a>
@@ -704,9 +880,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Material
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -715,7 +896,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Material
+            
+  
+    Material
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -731,9 +916,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Onboarding
+  
+
     
   </span>
+  
   
 
       </a>
@@ -754,9 +944,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Quality Assurance
+  
+
     
   </span>
+  
   
 
       </a>
@@ -777,9 +972,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     FAQ & Known Issues
+  
+
     
   </span>
+  
   
 
       </a>
@@ -807,9 +1007,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     License
+  
+
     
   </span>
+  
   
 
       </a>
@@ -829,9 +1034,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
     
   </span>
+  
   
 
       </a>
@@ -868,7 +1078,9 @@
         <li class="md-nav__item">
   <a href="#client-secret" class="md-nav__link">
     <span class="md-ellipsis">
-      Client Secret
+      
+        Client Secret
+      
     </span>
   </a>
   
@@ -877,7 +1089,9 @@
         <li class="md-nav__item">
   <a href="#user-password" class="md-nav__link">
     <span class="md-ellipsis">
-      User Password
+      
+        User Password
+      
     </span>
   </a>
   
@@ -886,7 +1100,9 @@
         <li class="md-nav__item">
   <a href="#refresh-token" class="md-nav__link">
     <span class="md-ellipsis">
-      Refresh Token
+      
+        Refresh Token
+      
     </span>
   </a>
   
@@ -895,7 +1111,9 @@
         <li class="md-nav__item">
   <a href="#exchange-token" class="md-nav__link">
     <span class="md-ellipsis">
-      Exchange Token
+      
+        Exchange Token
+      
     </span>
   </a>
   
@@ -911,6 +1129,55 @@
           
           
             <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Overview
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../token-user-password/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    API
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -1049,10 +1316,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.path", "navigation.top"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path", "navigation.top"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
