@@ -10,7 +10,10 @@ nav:
     - Security Model: security.md
     - Datastores: datastore.md
   - API:
-    - Examples: api-overview.md
+    - User Password: token-user-password.md
+    - Client Secret: token-client-secret.md
+    - Refresh Token: token-refresh-token.md
+    - Token Exchange: token-exchange-token.md
   - Setup & Monitoring:
     - Automations: automations.md
     - Deployment: deployment.md

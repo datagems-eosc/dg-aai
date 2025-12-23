@@ -22,7 +22,7 @@ You can always contact us through the [DataGEMS Help Desk](https://datagems.eu/c
 
 ## Examples
 
-You can find example of commonly used requests and API calls in the [Api Examples](api-overview.md) section.
+You can find example of commonly used token requests in the API section section.
 
 ## Tutorials
 
