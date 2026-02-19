@@ -41,7 +41,8 @@ To manage assigning access grants with specific context, roles are defined that 
     * **dg_ds-download**: Users with this access level can download the dataset
     * **dg_ds-edit**: Users with this access level can edit the dataset metadata
     * **dg_ds-manage**: Users with this access level can manage the dataset and share it with others
-    * **dg_ds-search**: Users with this access level can perform content based searched in the dataset
+    * **dg_ds-search**: Users with this access level can perform content based search in the dataset
+    * **dg_ds-power-search**: Users with this access level can perform advanced content based search in the dataset
 * **Collections**: Access grants assigned to a user or user group with a Collection context, assign the specific access level to the collection. The currently available collection context roles include:
     * **dg_col-browse**: Users with this access level can browse the collection
     * **dg_col-delete**: Users with this access level can delete the collection from the platform
